@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+<body>
+   
+    <h1 id="title"><u>SURVEY FORM</u></h1>
+<div class="container">
+    <p id="description" style="font-size: 30px;">Let us know how we can improve our academy</p>
+    <form action="" id="survey-form">
+       <label for="name" id="name-label" style="font-size: 40px;">*Name:</label><input type="text" required="required" style="margin-left: 30px;" id="name" placeholder="Enter your name"><br><br>
+       <label for="email" id="email-label" style="font-size: 40px;">*E-mail:</label><input type="email" required="required" style="margin-left: 15px;" id="email" placeholder="Enter your e-mail"><br><br>
+       <label for="age" id="number-label" style="font-size: 40px;">*Age:</label><input type="number" required="required" style="margin-left: 55px;" id="number" placeholder="Enter your age" min="1" max="99"><br><br><br>
+        <label style="font-size: 30px;">Which option best describes your current role?</label><select name="" id="dropdown" style="margin-left:50px;height:35px;width:200px;">
+           <option for="student">Student</option>
+           <option for="fulltimejob">Full Time job</option>
+           <option for="fulltimelearner">Full Time Learner</option>
+           <option for="prefernottosay">Prefer Not To Say</option>
+           <option for="others">Others</option>
+       </select><br><br>
+       
+      <div class="rowTab">
+      <div class="labels">
+        <label for="userRating" style="font-size: 27px;">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label style="font-size:27px;">Definitely<input name="radio-buttons" value="1" type="radio" class="userRatings" style="margin-left:25px;height:width:50px;height:20px"></label></li>
+          <li class="radio" style="font-size:27px;"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="userRatings" style="margin-left:59px;height:width:50px;height:20px"></label></li>
+          <li class="radio" style="font-size:27px;"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings" style="margin-left:42px;height:width:50px;height:20px"></label></li>
+        </ul>
+      </div>
+    </div>
+       <label style="font-size:30px;">What do you like most:</label> <select name="" id="dropdown" style="margin-left:30px;height:35px;width:200px;">
+            <option disabled="" selected="" value="">Select an option</option>          
+           <option for="challenges">Challenges</option>
+           <option for="projects">Projects</option>
+           <option for="community">Community</option>
+           <option for="opensource">Open Source</option>
+       </select><br><br>
+       <label style="font-size:30px;">Things that should be improved in the future
+(Check all that apply):</label><br>
+      <div id="resize">
+       <input type="checkbox" value="frontendprojects">Front-end Projects<br>
+       <input type="checkbox" value="backendprojects">Back-end Projects<br>
+       <input type="checkbox" value="datavisualisation">Data Visualisation<br>
+       <input type="checkbox" value="challenge">Challenges<br>
+       <input type="checkbox" value="OpenSourceCommunity">Open Source Community<br>
+       <input type="checkbox" value="Gitterhelprooms">Gitter help rooms<br>
+       <input type="checkbox" value="Videos">Videos<br>
+       <input type="checkbox" value="Meetups">City Meetups<br>
+       <input type="checkbox" value="Wiki">Wiki<br>
+       <input type="checkbox" value="Forum">Forum<br>
+       <input type="checkbox" value="AdditionalCourses">Additional Courses
+       </div><br><br>
+       <label style="font-size:30px;">Any Comments or Suggestions?</label><br><textarea name="" id="" cols="60" rows="6"></textarea><br>
+        <button type="submit" id="submit">Submit</button>
+        
+    </form>
+</div>    
+</body>
+</html>
